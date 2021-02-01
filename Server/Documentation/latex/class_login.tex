@@ -1,0 +1,41 @@
+\hypertarget{class_login}{}\doxysection{Login Class Reference}
+\label{class_login}\index{Login@{Login}}
+Inheritance diagram for Login\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_login}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_login_a4ecdce661e53ffb8a03dffb1f059b82d}{login\+\_\+process}} (int sockfd)
+\item 
+\mbox{\Hypertarget{class_login_a5a4ec120b70970a2a7d561201697cbea}\label{class_login_a5a4ec120b70970a2a7d561201697cbea}} 
+virtual bool {\bfseries confirmation} (const std\+::string \&username, const std\+::string \&password)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_login_a4ecdce661e53ffb8a03dffb1f059b82d}\label{class_login_a4ecdce661e53ffb8a03dffb1f059b82d}} 
+\index{Login@{Login}!login\_process@{login\_process}}
+\index{login\_process@{login\_process}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{login\_process()}{login\_process()}}
+{\footnotesize\ttfamily std\+::string Login\+::login\+\_\+process (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+Manages with the login process. It demands the username and the password from the client and it make the confirmation (though the derivated classes)
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & -\/ the socket which gives us the username and the password\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+it returns the username if it is valid and \char`\"{}(\+N\+U\+L\+L)\char`\"{} if it is invalid 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Login.\+h\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Login.\+cpp\end{DoxyCompactItemize}

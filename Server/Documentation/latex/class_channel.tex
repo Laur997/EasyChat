@@ -1,0 +1,181 @@
+\hypertarget{class_channel}{}\doxysection{Channel Class Reference}
+\label{class_channel}\index{Channel@{Channel}}
+Inheritance diagram for Channel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_channel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_channel_afeb754fb8e294a0120f5ed030ce511ad}\label{class_channel_afeb754fb8e294a0120f5ed030ce511ad}} 
+{\bfseries Channel} (std\+::string name)
+\item 
+std\+::string \mbox{\hyperlink{class_channel_ab8c8aa2e741b87bfdb1b3562235bfba7}{get\+Name}} () const
+\item 
+\mbox{\Hypertarget{class_channel_a7000d6cef841c009c229158f8096fbfd}\label{class_channel_a7000d6cef841c009c229158f8096fbfd}} 
+std\+::string {\bfseries get\+Type} () const
+\item 
+void \mbox{\hyperlink{class_channel_ad7bc1454f13e98aadf7a247ba5ee619c}{set\+Name}} (const std\+::string \&channel\+\_\+name)
+\item 
+\mbox{\Hypertarget{class_channel_a3d6e760df70a9f88ff9b01dd6ee8f832}\label{class_channel_a3d6e760df70a9f88ff9b01dd6ee8f832}} 
+void {\bfseries set\+Type} (const std\+::string \&channel\+\_\+type)
+\item 
+void \mbox{\hyperlink{class_channel_a1097d401f3d9eb4d4b04b8508aaceb40}{add\+User}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&member)
+\item 
+\mbox{\Hypertarget{class_channel_adfc6758b276e9ec615d8d2ab82035e57}\label{class_channel_adfc6758b276e9ec615d8d2ab82035e57}} 
+void {\bfseries add\+Message} (const \mbox{\hyperlink{class_message}{Message}} \&msg)
+\item 
+\mbox{\Hypertarget{class_channel_a8b0d764f961d6ce231c99cd2a88f2f64}\label{class_channel_a8b0d764f961d6ce231c99cd2a88f2f64}} 
+virtual void {\bfseries set\+Topic} (const std\+::string \&topic)
+\item 
+\mbox{\Hypertarget{class_channel_a766f81f2e4047329f08c5902f7a32352}\label{class_channel_a766f81f2e4047329f08c5902f7a32352}} 
+virtual std\+::string {\bfseries get\+Topic} () const
+\item 
+\mbox{\Hypertarget{class_channel_ad7845b6e68fc7fe5fad9ec12b41f5113}\label{class_channel_ad7845b6e68fc7fe5fad9ec12b41f5113}} 
+void {\bfseries import\+Messages} (const std\+::vector$<$ \mbox{\hyperlink{class_message}{Message}} $>$ \&messages)
+\item 
+void \mbox{\hyperlink{class_channel_a4ef120f51152e2a9aead2f92d487b0ad}{erase}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&member)
+\item 
+void \mbox{\hyperlink{class_channel_a7c2a097208f692a3d8911b2153c4b0de}{Atributes}} () const
+\item 
+bool \mbox{\hyperlink{class_channel_ae4049c23ac4a8688e0a4ca931e1b4032}{is\+\_\+a\+\_\+\+Member}} (const std\+::string \&name) const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_channel_aa604af9f4fd71bbade309bbceaffbde7}{get\+Targets}} () const
+\item 
+\mbox{\Hypertarget{class_channel_aa74b4338a60ed695407e3505137115c1}\label{class_channel_aa74b4338a60ed695407e3505137115c1}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ $>$ {\bfseries get\+Members} ()
+\item 
+std\+::string \mbox{\hyperlink{class_channel_a1161e3b8212be0db1aef471b62893e4f}{to\+\_\+string\+\_\+members}} () const
+\item 
+\mbox{\Hypertarget{class_channel_a244ea96604587a5d4be99bf2da3ca57e}\label{class_channel_a244ea96604587a5d4be99bf2da3ca57e}} 
+int {\bfseries get\+Users\+Capacity} ()
+\item 
+\mbox{\Hypertarget{class_channel_a2ab9a3a292853c9aaf973009c15441d6}\label{class_channel_a2ab9a3a292853c9aaf973009c15441d6}} 
+int {\bfseries get\+Messages\+Capacity} ()
+\item 
+\mbox{\Hypertarget{class_channel_ad0d4f1ab8a05f70cda3266c00d272f28}\label{class_channel_ad0d4f1ab8a05f70cda3266c00d272f28}} 
+std\+::vector$<$ \mbox{\hyperlink{class_message}{Message}} $>$ {\bfseries get\+Messages} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_channel_ae080e1afd52f3b70e04c62fea46447aa}\label{class_channel_ae080e1afd52f3b70e04c62fea46447aa}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_channel_a2e02b371642f8756ac3cbc2740250045}\label{class_channel_a2e02b371642f8756ac3cbc2740250045}} 
+std\+::string {\bfseries type}
+\item 
+\mbox{\Hypertarget{class_channel_a30c4606543b0302c6f236eff1dbc6366}\label{class_channel_a30c4606543b0302c6f236eff1dbc6366}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ $>$ {\bfseries members}
+\item 
+\mbox{\Hypertarget{class_channel_a70ae09ff05d8d84283e1648de9ba2d7a}\label{class_channel_a70ae09ff05d8d84283e1648de9ba2d7a}} 
+std\+::vector$<$ \mbox{\hyperlink{class_message}{Message}} $>$ {\bfseries messages}
+\item 
+\mbox{\Hypertarget{class_channel_aff70b7a6a02e8829970edd3c9720ee51}\label{class_channel_aff70b7a6a02e8829970edd3c9720ee51}} 
+std\+::vector$<$ int $>$ {\bfseries target\+\_\+sockets}
+\item 
+\mbox{\Hypertarget{class_channel_a6a8449dede0c709654318998ce0f32a1}\label{class_channel_a6a8449dede0c709654318998ce0f32a1}} 
+int {\bfseries users\+\_\+capacity} = 20
+\item 
+\mbox{\Hypertarget{class_channel_aa67706c738aad0de1df67a1b11429af0}\label{class_channel_aa67706c738aad0de1df67a1b11429af0}} 
+int {\bfseries messages\+\_\+capacity} = 20
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_channel_a1097d401f3d9eb4d4b04b8508aaceb40}\label{class_channel_a1097d401f3d9eb4d4b04b8508aaceb40}} 
+\index{Channel@{Channel}!addUser@{addUser}}
+\index{addUser@{addUser}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void Channel\+::add\+User (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{member }\end{DoxyParamCaption})}
+
+adds a new user in the members list, if it is not already included and if the channel is not full yet 
+\begin{DoxyParams}{Parameters}
+{\em member} & -\/ a user object meant to be added in member\textquotesingle{}s list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_a7c2a097208f692a3d8911b2153c4b0de}\label{class_channel_a7c2a097208f692a3d8911b2153c4b0de}} 
+\index{Channel@{Channel}!Atributes@{Atributes}}
+\index{Atributes@{Atributes}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{Atributes()}{Atributes()}}
+{\footnotesize\ttfamily void Channel\+::\+Atributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+it prints on the screen the name and the members (usernames) \mbox{\Hypertarget{class_channel_a4ef120f51152e2a9aead2f92d487b0ad}\label{class_channel_a4ef120f51152e2a9aead2f92d487b0ad}} 
+\index{Channel@{Channel}!erase@{erase}}
+\index{erase@{erase}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void Channel\+::erase (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{member }\end{DoxyParamCaption})}
+
+erase a user in the members list
+
+
+\begin{DoxyParams}{Parameters}
+{\em member} & -\/ the user which is going to be erased from the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_ab8c8aa2e741b87bfdb1b3562235bfba7}\label{class_channel_ab8c8aa2e741b87bfdb1b3562235bfba7}} 
+\index{Channel@{Channel}!getName@{getName}}
+\index{getName@{getName}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Channel\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the \char`\"{}name\char`\"{} member 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_channel_aa604af9f4fd71bbade309bbceaffbde7}\label{class_channel_aa604af9f4fd71bbade309bbceaffbde7}} 
+\index{Channel@{Channel}!getTargets@{getTargets}}
+\index{getTargets@{getTargets}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{getTargets()}{getTargets()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Channel\+::get\+Targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the sockets numbers for all user from this channel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_channel_ae4049c23ac4a8688e0a4ca931e1b4032}\label{class_channel_ae4049c23ac4a8688e0a4ca931e1b4032}} 
+\index{Channel@{Channel}!is\_a\_Member@{is\_a\_Member}}
+\index{is\_a\_Member@{is\_a\_Member}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{is\_a\_Member()}{is\_a\_Member()}}
+{\footnotesize\ttfamily bool Channel\+::is\+\_\+a\+\_\+\+Member (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+verify if a user it is existent on members list
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ the user\textquotesingle{}s name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user is a member of this channels, and false if it doesn\textquotesingle{}t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_channel_ad7bc1454f13e98aadf7a247ba5ee619c}\label{class_channel_ad7bc1454f13e98aadf7a247ba5ee619c}} 
+\index{Channel@{Channel}!setName@{setName}}
+\index{setName@{setName}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Channel\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{channel\+\_\+name }\end{DoxyParamCaption})}
+
+assigns a value to the \char`\"{}name\char`\"{} member
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_channel_a1161e3b8212be0db1aef471b62893e4f}\label{class_channel_a1161e3b8212be0db1aef471b62893e4f}} 
+\index{Channel@{Channel}!to\_string\_members@{to\_string\_members}}
+\index{to\_string\_members@{to\_string\_members}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{to\_string\_members()}{to\_string\_members()}}
+{\footnotesize\ttfamily std\+::string Channel\+::to\+\_\+string\+\_\+members (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+a string which contains a list with all members.
+\end{DoxyReturn}
+Format\+: user1 + ~\newline
+ + user2 + ~\newline
+ + ..... 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Channel.\+h\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Channel.\+cpp\end{DoxyCompactItemize}

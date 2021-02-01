@@ -1,1 +1,0 @@
-g++  -pthread Client.cpp -o Client.exe 

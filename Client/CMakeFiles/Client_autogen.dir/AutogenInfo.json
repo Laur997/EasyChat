@@ -1,0 +1,90 @@
+{
+	"BUILD_DIR" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/Client_autogen",
+	"CMAKE_BINARY_DIR" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client",
+	"CMAKE_CURRENT_BINARY_DIR" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake.exe",
+	"CMAKE_SOURCE_DIR" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/cygdrive/c/Users/Laur/Documents/EasyChat/Client/client_connection.h",
+			"Mu",
+			"EWIEGA46WW/moc_client_connection.cpp"
+		],
+		[
+			"/cygdrive/c/Users/Laur/Documents/EasyChat/Client/mainwindow.h",
+			"Mu",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		],
+		[
+			"/cygdrive/c/Users/Laur/Documents/EasyChat/Client/utils.h",
+			"Mu",
+			"EWIEGA46WW/moc_utils.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/Client_autogen/include",
+	"MOC_COMPILATION_FILE" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/Client_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/cygdrive/c/Users/Laur/Documents/EasyChat/Client",
+		"/usr/include/qt5",
+		"/usr/include/qt5/QtWidgets",
+		"/usr/include/qt5/QtGui",
+		"/usr/include/qt5/QtCore",
+		"/usr/lib/qt5/mkspecs/cygwin-g++",
+		"/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++",
+		"/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin",
+		"/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward",
+		"/usr/lib/gcc/x86_64-pc-cygwin/10/include",
+		"/usr/include",
+		"/usr/include/w32api"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++.exe",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.17.3/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/Client_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/CMakeFiles/Client_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/CMakeFiles/Client_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/cygdrive/c/Users/Laur/Documents/EasyChat/Client/client_connection.cpp",
+			"Mu"
+		],
+		[ "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/main.cpp", "Mu" ],
+		[
+			"/cygdrive/c/Users/Laur/Documents/EasyChat/Client/mainwindow.cpp",
+			"Mu"
+		],
+		[ "/cygdrive/c/Users/Laur/Documents/EasyChat/Client/utils.cpp", "Mu" ]
+	],
+	"VERBOSITY" : 0
+}

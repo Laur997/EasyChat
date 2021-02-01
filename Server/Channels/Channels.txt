@@ -1,0 +1,8 @@
+Hobbies>Sporturi extreme
+
+IT_group>Probleme cu gadget-urile
+default>discutie
+free_time>just chatting
+
+secret_group>Pentru discutii private
+work>Concediu

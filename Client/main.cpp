@@ -1,18 +1,11 @@
-// Copyright Siemens
-#include "Client.h"
-#include <sys/types.h>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netdb.h>
-#include <arpa/inet.h>
-#include <string.h>
-#include <iostream>
-#include <thread>
+#include "mainwindow.h"
+#include <QApplication>
 
-int main() {
-    Client client;
-    int server = client.configure_connection();
-    client.start_chat(server);
-    // close the socket
-    close(server);
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+
+    return a.exec();
 }

@@ -1,0 +1,308 @@
+\hypertarget{class_server}{}\doxysection{Server Class Reference}
+\label{class_server}\index{Server@{Server}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_server_a7eac07d2582fa01c2671362efa955b31}{start}} ()
+\item 
+int \mbox{\hyperlink{class_server_adcadd4a5dc4fc71942cc38a175263881}{it\+Exist}} (const std\+::string \&username)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_server_ae9fec8db50c44a79b119a741ec92985e}{login\+\_\+part}} (int sockfd)
+\item 
+void \mbox{\hyperlink{class_server_a8dcfca8b2d348bef675960862af1e777}{handle\+\_\+connection}} (int client\+Socket)
+\item 
+bool \mbox{\hyperlink{class_server_af9f50dfb46c1ca996bb8a0304f1dbf5c}{limit\+\_\+riched}} ()
+\item 
+\mbox{\Hypertarget{class_server_a6805b6143f21613cfd2a4004acd8cc7b}\label{class_server_a6805b6143f21613cfd2a4004acd8cc7b}} 
+void \mbox{\hyperlink{class_server_a6805b6143f21613cfd2a4004acd8cc7b}{clear\+\_\+threads}} ()
+\begin{DoxyCompactList}\small\item\em It looks up for finished threads and erase them from the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_a83fc5fd4ddee2f0c9c680d6de4341efd}{start\+\_\+chat}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&user)
+\item 
+void \mbox{\hyperlink{class_server_a901c7c20773a62a557165cab89e8ce33}{send\+\_\+in\+\_\+channel}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&current\+\_\+user, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_channel}{Channel}} $>$ \&ch, std\+::string \&message, Interface\+\_\+send \&Test=Real\+\_\+send\+::get\+Real\+Instance())
+\item 
+void \mbox{\hyperlink{class_server_ae3d063f83bf2e2c25414ce9aaf11b0af}{filter}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&user, char $\ast$buff, Interface\+\_\+send \&Test=Real\+\_\+send\+::get\+Real\+Instance())
+\item 
+void \mbox{\hyperlink{class_server_a0bc46a9f89fc5eb59a7848e8e80602e7}{send\+\_\+to\+\_\+everyone}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&current\+\_\+user, const std\+::string \&message)
+\item 
+void \mbox{\hyperlink{class_server_a528a67f216bd8fa9c1a3873f7aac41be}{send\+\_\+to\+\_\+everyone}} (const std\+::string \&message)
+\item 
+void \mbox{\hyperlink{class_server_a5eebbfb394d0b35eba3ced6d90a6a296}{send\+\_\+package}} (int sockfd, std\+::string \&channel\+\_\+name)
+\item 
+void \mbox{\hyperlink{class_server_a4cbdbd7c2da94003453f3dd167458f3d}{send\+\_\+username}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ user)
+\item 
+void \mbox{\hyperlink{class_server_ac41210781c3fbe153e1fd8e94e6b9ea8}{execute\+\_\+command}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&current\+\_\+user, const std\+::string \&command, Interface\+\_\+send \&Test=Real\+\_\+send\+::get\+Real\+Instance())
+\item 
+void \mbox{\hyperlink{class_server_acd8f3e87cee4668778a3e215ea2391de}{admin\+\_\+command\+\_\+line}} ()
+\item 
+void \mbox{\hyperlink{class_server_a01dffd54232f8737b6f8261b836132cf}{load\+\_\+channels}} ()
+\item 
+void \mbox{\hyperlink{class_server_acea8c69531c2804f7f9ecfe728d25ef5}{load\+\_\+private\+\_\+chats}} ()
+\item 
+void \mbox{\hyperlink{class_server_a7c2a0aaf34182f29c35c1842f95636b1}{load\+\_\+users}} ()
+\item 
+\mbox{\Hypertarget{class_server_aa625d269b789b797354513d0ec24bf96}\label{class_server_aa625d269b789b797354513d0ec24bf96}} 
+void \mbox{\hyperlink{class_server_aa625d269b789b797354513d0ec24bf96}{load\+\_\+messages}} ()
+\begin{DoxyCompactList}\small\item\em load the messages from database and store them into the channels objects \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_a08f09ae5f07debc82b2726bd3b7dfccb}{show\+\_\+channels}} (int current\+\_\+socket)
+\item 
+void \mbox{\hyperlink{class_server_a4a842d6a33c45b6b6432462fc67b326e}{show\+\_\+channels}} ()
+\item 
+void \mbox{\hyperlink{class_server_acd74a74c5a2cfc5b7373b41ae4925c08}{save\+\_\+channels}} ()
+\item 
+\mbox{\Hypertarget{class_server_a87a38d293771a525b7cc0fb6b21715c4}\label{class_server_a87a38d293771a525b7cc0fb6b21715c4}} 
+void \mbox{\hyperlink{class_server_a87a38d293771a525b7cc0fb6b21715c4}{save\+\_\+private\+\_\+chats}} ()
+\begin{DoxyCompactList}\small\item\em save the private-\/chat channels information in the database \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_a2521b8c9d0082ea47313710fb04bbdf0}\label{class_server_a2521b8c9d0082ea47313710fb04bbdf0}} 
+void \mbox{\hyperlink{class_server_a2521b8c9d0082ea47313710fb04bbdf0}{save\+\_\+messages}} ()
+\begin{DoxyCompactList}\small\item\em save all the messages in the database \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_aa61b422240fd6a0ef14411f6bfdb8826}\label{class_server_aa61b422240fd6a0ef14411f6bfdb8826}} 
+void \mbox{\hyperlink{class_server_aa61b422240fd6a0ef14411f6bfdb8826}{update\+\_\+channels\+\_\+for\+\_\+client}} ()
+\begin{DoxyCompactList}\small\item\em send to the user the new status of the channels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_a06ed9d93c9d5b6cb44c66498eb4e29bf}\label{class_server_a06ed9d93c9d5b6cb44c66498eb4e29bf}} 
+void \mbox{\hyperlink{class_server_a06ed9d93c9d5b6cb44c66498eb4e29bf}{update\+\_\+users\+\_\+for\+\_\+client}} ()
+\begin{DoxyCompactList}\small\item\em send to the user the new status of the users \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_server_ac9e0c1b42aebef70781970853a4df96a}\label{class_server_ac9e0c1b42aebef70781970853a4df96a}} 
+static std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ $>$ \mbox{\hyperlink{class_server_ac9e0c1b42aebef70781970853a4df96a}{users}}
+\begin{DoxyCompactList}\small\item\em the list with online users \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_a1ed2e198f7b4ce5571f4b3b803af08b6}\label{class_server_a1ed2e198f7b4ce5571f4b3b803af08b6}} 
+static std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_channel}{Channel}} $>$ $>$ \mbox{\hyperlink{class_server_a1ed2e198f7b4ce5571f4b3b803af08b6}{channels}}
+\begin{DoxyCompactList}\small\item\em the list with available channels \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_acd8f3e87cee4668778a3e215ea2391de}\label{class_server_acd8f3e87cee4668778a3e215ea2391de}} 
+\index{Server@{Server}!admin\_command\_line@{admin\_command\_line}}
+\index{admin\_command\_line@{admin\_command\_line}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{admin\_command\_line()}{admin\_command\_line()}}
+{\footnotesize\ttfamily void Server\+::admin\+\_\+command\+\_\+line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+analize the command from the administrator and execute the proper action \mbox{\Hypertarget{class_server_ac41210781c3fbe153e1fd8e94e6b9ea8}\label{class_server_ac41210781c3fbe153e1fd8e94e6b9ea8}} 
+\index{Server@{Server}!execute\_command@{execute\_command}}
+\index{execute\_command@{execute\_command}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{execute\_command()}{execute\_command()}}
+{\footnotesize\ttfamily void Server\+::execute\+\_\+command (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{current\+\_\+user,  }\item[{const std\+::string \&}]{command,  }\item[{Interface\+\_\+send \&}]{Test = {\ttfamily Real\+\_\+send\+:\+:getRealInstance()} }\end{DoxyParamCaption})}
+
+analize the command from the client and execute the proper action
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em current\+\_\+user} & -\/ the current user \\
+\hline
+\mbox{\texttt{ in}}  & {\em command} & -\/ the command meant to be executed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_ae3d063f83bf2e2c25414ce9aaf11b0af}\label{class_server_ae3d063f83bf2e2c25414ce9aaf11b0af}} 
+\index{Server@{Server}!filter@{filter}}
+\index{filter@{filter}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily void Server\+::filter (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{user,  }\item[{char $\ast$}]{buff,  }\item[{Interface\+\_\+send \&}]{Test = {\ttfamily Real\+\_\+send\+:\+:getRealInstance()} }\end{DoxyParamCaption})}
+
+decides if a text message is a regular message, a private message or a command
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\mbox{[}in\mbox{]}} & -\/ the current user \\
+\hline
+{\em buff\mbox{[}in\mbox{]}} & -\/ the message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a8dcfca8b2d348bef675960862af1e777}\label{class_server_a8dcfca8b2d348bef675960862af1e777}} 
+\index{Server@{Server}!handle\_connection@{handle\_connection}}
+\index{handle\_connection@{handle\_connection}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{handle\_connection()}{handle\_connection()}}
+{\footnotesize\ttfamily void Server\+::handle\+\_\+connection (\begin{DoxyParamCaption}\item[{int}]{client\+Socket }\end{DoxyParamCaption})}
+
+calls the login\+\_\+part function and if it receives a valid client, is added to users. After that, it runs the chat part for the client
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em client\+Socket} & -\/the socket which gives us the username and the password \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_adcadd4a5dc4fc71942cc38a175263881}\label{class_server_adcadd4a5dc4fc71942cc38a175263881}} 
+\index{Server@{Server}!itExist@{itExist}}
+\index{itExist@{itExist}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{itExist()}{itExist()}}
+{\footnotesize\ttfamily int Server\+::it\+Exist (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+it verifies if a user is online
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em username} & -\/ the name of the user whose name the function must must verify if it is online or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+client\textquotesingle{}s socket number if it exists and if it doesn\textquotesingle{}t returns -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_server_af9f50dfb46c1ca996bb8a0304f1dbf5c}\label{class_server_af9f50dfb46c1ca996bb8a0304f1dbf5c}} 
+\index{Server@{Server}!limit\_riched@{limit\_riched}}
+\index{limit\_riched@{limit\_riched}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{limit\_riched()}{limit\_riched()}}
+{\footnotesize\ttfamily bool Server\+::limit\+\_\+riched (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It verifies if the limit it\textquotesingle{}s riched
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}false\textquotesingle{} if the limit is not reached (the server supports at least one more client), and \textquotesingle{}true\textquotesingle{} if the limit is reached 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_server_a01dffd54232f8737b6f8261b836132cf}\label{class_server_a01dffd54232f8737b6f8261b836132cf}} 
+\index{Server@{Server}!load\_channels@{load\_channels}}
+\index{load\_channels@{load\_channels}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{load\_channels()}{load\_channels()}}
+{\footnotesize\ttfamily void Server\+::load\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+take group\textquotesingle{}s names and topics, and than create the channels objects and add them on a list \mbox{\Hypertarget{class_server_acea8c69531c2804f7f9ecfe728d25ef5}\label{class_server_acea8c69531c2804f7f9ecfe728d25ef5}} 
+\index{Server@{Server}!load\_private\_chats@{load\_private\_chats}}
+\index{load\_private\_chats@{load\_private\_chats}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{load\_private\_chats()}{load\_private\_chats()}}
+{\footnotesize\ttfamily void Server\+::load\+\_\+private\+\_\+chats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+loads from the database the private-\/chat channels and store them into \textquotesingle{}channels\textquotesingle{} map ~\newline
+ \mbox{\Hypertarget{class_server_a7c2a0aaf34182f29c35c1842f95636b1}\label{class_server_a7c2a0aaf34182f29c35c1842f95636b1}} 
+\index{Server@{Server}!load\_users@{load\_users}}
+\index{load\_users@{load\_users}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{load\_users()}{load\_users()}}
+{\footnotesize\ttfamily void Server\+::load\+\_\+users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+loads from the database users information and store it into \textquotesingle{}users\textquotesingle{} map ~\newline
+ \mbox{\Hypertarget{class_server_ae9fec8db50c44a79b119a741ec92985e}\label{class_server_ae9fec8db50c44a79b119a741ec92985e}} 
+\index{Server@{Server}!login\_part@{login\_part}}
+\index{login\_part@{login\_part}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{login\_part()}{login\_part()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ Server\+::login\+\_\+part (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+This function deals with the authentinfication method and creating the client object
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sockfd} & -\/ the current client socket\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_server_acd74a74c5a2cfc5b7373b41ae4925c08}\label{class_server_acd74a74c5a2cfc5b7373b41ae4925c08}} 
+\index{Server@{Server}!save\_channels@{save\_channels}}
+\index{save\_channels@{save\_channels}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{save\_channels()}{save\_channels()}}
+{\footnotesize\ttfamily void Server\+::save\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+saves the content of channels in the database \mbox{\Hypertarget{class_server_a901c7c20773a62a557165cab89e8ce33}\label{class_server_a901c7c20773a62a557165cab89e8ce33}} 
+\index{Server@{Server}!send\_in\_channel@{send\_in\_channel}}
+\index{send\_in\_channel@{send\_in\_channel}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{send\_in\_channel()}{send\_in\_channel()}}
+{\footnotesize\ttfamily void Server\+::send\+\_\+in\+\_\+channel (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{current\+\_\+user,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_channel}{Channel}} $>$ \&}]{ch,  }\item[{std\+::string \&}]{message,  }\item[{Interface\+\_\+send \&}]{Test = {\ttfamily Real\+\_\+send\+:\+:getRealInstance()} }\end{DoxyParamCaption})}
+
+it takes the message received from client and send it to the other users from the same channel
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em current\+\_\+user} & -\/ the current user \\
+\hline
+\mbox{\texttt{ in}}  & {\em ch} & -\/ the current channel \\
+\hline
+\mbox{\texttt{ in}}  & {\em message} & -\/ the message which is meant to be delivered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a5eebbfb394d0b35eba3ced6d90a6a296}\label{class_server_a5eebbfb394d0b35eba3ced6d90a6a296}} 
+\index{Server@{Server}!send\_package@{send\_package}}
+\index{send\_package@{send\_package}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{send\_package()}{send\_package()}}
+{\footnotesize\ttfamily void Server\+::send\+\_\+package (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{std\+::string \&}]{channel\+\_\+name }\end{DoxyParamCaption})}
+
+Sends to the client the messages contained in the channel
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sockfd} & -\/ the client\textquotesingle{}s socket \\
+\hline
+\mbox{\texttt{ in}}  & {\em channel\+\_\+name} & -\/ the name of the channels where the server sends message from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a528a67f216bd8fa9c1a3873f7aac41be}\label{class_server_a528a67f216bd8fa9c1a3873f7aac41be}} 
+\index{Server@{Server}!send\_to\_everyone@{send\_to\_everyone}}
+\index{send\_to\_everyone@{send\_to\_everyone}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{send\_to\_everyone()}{send\_to\_everyone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::send\+\_\+to\+\_\+everyone (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+this function runs from admin command line send message to all online users
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em message-\/} & the message which is meant to be delivered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a0bc46a9f89fc5eb59a7848e8e80602e7}\label{class_server_a0bc46a9f89fc5eb59a7848e8e80602e7}} 
+\index{Server@{Server}!send\_to\_everyone@{send\_to\_everyone}}
+\index{send\_to\_everyone@{send\_to\_everyone}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{send\_to\_everyone()}{send\_to\_everyone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::send\+\_\+to\+\_\+everyone (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{current\+\_\+user,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+this function runs from handle\+\_\+connection send message to all online users
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em current\+\_\+user} & -\/ the current channel \\
+\hline
+\mbox{\texttt{ in}}  & {\em message} & -\/ the message which is meant to be delivered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a4cbdbd7c2da94003453f3dd167458f3d}\label{class_server_a4cbdbd7c2da94003453f3dd167458f3d}} 
+\index{Server@{Server}!send\_username@{send\_username}}
+\index{send\_username@{send\_username}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{send\_username()}{send\_username()}}
+{\footnotesize\ttfamily void Server\+::send\+\_\+username (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$}]{user }\end{DoxyParamCaption})}
+
+sends the username to the client list 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em user} & -\/ the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a4a842d6a33c45b6b6432462fc67b326e}\label{class_server_a4a842d6a33c45b6b6432462fc67b326e}} 
+\index{Server@{Server}!show\_channels@{show\_channels}}
+\index{show\_channels@{show\_channels}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{show\_channels()}{show\_channels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::show\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+print message which contains the channels and there members for the server console \mbox{\Hypertarget{class_server_a08f09ae5f07debc82b2726bd3b7dfccb}\label{class_server_a08f09ae5f07debc82b2726bd3b7dfccb}} 
+\index{Server@{Server}!show\_channels@{show\_channels}}
+\index{show\_channels@{show\_channels}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{show\_channels()}{show\_channels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::show\+\_\+channels (\begin{DoxyParamCaption}\item[{int}]{current\+\_\+socket }\end{DoxyParamCaption})}
+
+sends to the client a message which contains the available channels and their members
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em current\+\_\+socket} & -\/ the socket which is associated with the current client \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_a7eac07d2582fa01c2671362efa955b31}\label{class_server_a7eac07d2582fa01c2671362efa955b31}} 
+\index{Server@{Server}!start@{start}}
+\index{start@{start}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Server\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+runs the server load functions are called bind ip adress and port to a socket \mbox{\Hypertarget{class_server_a83fc5fd4ddee2f0c9c680d6de4341efd}\label{class_server_a83fc5fd4ddee2f0c9c680d6de4341efd}} 
+\index{Server@{Server}!start\_chat@{start\_chat}}
+\index{start\_chat@{start\_chat}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{start\_chat()}{start\_chat()}}
+{\footnotesize\ttfamily void Server\+::start\+\_\+chat (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user}{User}} $>$ \&}]{user }\end{DoxyParamCaption})}
+
+manages the receive-\/send process
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em user} & -\/ the current client \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Server.\+h\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Server.\+cpp\end{DoxyCompactItemize}

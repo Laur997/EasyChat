@@ -1,0 +1,12 @@
+ g++ test.cpp Test_Server.o -I.. -I../fake -I../interface -I/usr/include/mysql -L/usr/bin -lcygmysqlclient-18 -pthread -L. -lServer -lcppunit -o test.exe
+
+
+
+ar rcs libServer.a main_Server.o Server.o Login.o  User.o DB_Login.o File_Login.o Channel.o Utils.o interface/Interface_send.o real/Real_send.o fake/Fake_send.o
+
+
+
+g++ -c -I.. -I../fake -I../interface Test_Server.cpp
+
+
+

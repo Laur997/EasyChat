@@ -1,0 +1,58 @@
+\hypertarget{class_utils}{}\doxysection{Utils Class Reference}
+\label{class_utils}\index{Utils@{Utils}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_utils_a8c0a30c09097501f9dfbd010f73e46a1}{split}} (const std\+::string \&s, const std\+::string \&delimiter)
+\item 
+\mbox{\Hypertarget{class_utils_a45852663e3048a8b9e36599c8bdd0c5a}\label{class_utils_a45852663e3048a8b9e36599c8bdd0c5a}} 
+static std\+::vector$<$ std\+::string $>$ {\bfseries split} (const std\+::string \&s, char delimiter)
+\item 
+\mbox{\Hypertarget{class_utils_ac80d067f547572a4b66af40fec030133}\label{class_utils_ac80d067f547572a4b66af40fec030133}} 
+static bool {\bfseries contains\+Only\+A\+S\+C\+II} (char $\ast$buf, int buf\+\_\+size)
+\item 
+static int \mbox{\hyperlink{class_utils_a9b63fa15f701bf63d80abf7ede3637c1}{getch}} ()
+\item 
+\mbox{\Hypertarget{class_utils_a38f2e956a2744708e3b33dda785216c1}\label{class_utils_a38f2e956a2744708e3b33dda785216c1}} 
+static std\+::string {\bfseries get\+Time} ()
+\item 
+\mbox{\Hypertarget{class_utils_acf5f214fa8a0fbd8a17a208ddb333725}\label{class_utils_acf5f214fa8a0fbd8a17a208ddb333725}} 
+static int {\bfseries compare\+\_\+strings} (const std\+::string \&left, const std\+::string \&right)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_utils_a9b63fa15f701bf63d80abf7ede3637c1}\label{class_utils_a9b63fa15f701bf63d80abf7ede3637c1}} 
+\index{Utils@{Utils}!getch@{getch}}
+\index{getch@{getch}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getch()}{getch()}}
+{\footnotesize\ttfamily int Utils\+::getch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+auxiliary function for getpass. It takes a character from the keyboard and return it in integer format
+
+\begin{DoxyReturn}{Returns}
+a caracter in integer format ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_utils_a8c0a30c09097501f9dfbd010f73e46a1}\label{class_utils_a8c0a30c09097501f9dfbd010f73e46a1}} 
+\index{Utils@{Utils}!split@{split}}
+\index{split@{split}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Utils\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s,  }\item[{const std\+::string \&}]{delimiter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+split a string in pieces depending on delimiter 
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/ the string which is going to be splitted \\
+\hline
+{\em delimiter} & -\/ it helps the functions to \char`\"{}know\char`\"{} where to make the separation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector with all splitted tokens 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Utils.\+h\item 
+/cygdrive/c/\+Users/\+Laur/\+App\+Data/\+Roaming/\+S\+P\+B\+\_\+\+Data/\+Easy\+Chat/\+Easy\+Chat\+\_\+\+L\+B/\+Server/Utils.\+cpp\end{DoxyCompactItemize}
